@@ -19,7 +19,10 @@ class TestForm(BaseClass):
         self.selectOption(homepage.getGender(), fields["gender"])
         homepage.getDate().send_keys("2020-01-01")
         homepage.getSuccess().click()
-
+        print("update from gt1 ")
+        print("update from gt1 ")
+        print("update from gt1 ")
+        print("update from gt1 ")
     @pytest.fixture(params=TestFormData.test_form_data)
     def fields(self, request):
         return request.param
